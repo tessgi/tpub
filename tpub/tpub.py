@@ -125,7 +125,8 @@ class PublicationDB(object):
         colors = {'TESS': Highlight.BLUE,
                   'TIC': Highlight.BLUE,
                   'TOI': Highlight.BLUE,
-                  'PLANET': Highlight.YELLOW}
+                  'PLANET': Highlight.YELLOW,
+                  'Transiting Exoplanet Survey Satellite': Highlight.YELLOW,}
         title = article.title[0]
         try:
             abstract = article.abstract
