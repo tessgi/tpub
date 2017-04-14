@@ -1,4 +1,4 @@
-"""Build and maintain a database of Kepler/K2 publications.
+"""Build and maintain a database of TESS publications.
 """
 from __future__ import print_function, division, unicode_literals
 
@@ -27,7 +27,7 @@ from astropy.utils.console import ProgressBar
 from . import plot, PACKAGEDIR
 
 # Where is the default location of the SQLite database?
-DEFAULT_DB = os.path.expanduser("~/.kpub.db")
+DEFAULT_DB = os.path.expanduser("~/.tpub.db")
 
 # Which metadata fields do we want to retrieve from the ADS API?
 # (basically everything apart from 'aff' and 'body' to reduce data volume)
@@ -156,7 +156,7 @@ class PublicationDB(object):
               end="")
         prompt = input()
         if prompt == "1":
-            mission = "kepler"
+            mission = "tess"
         elif prompt == "3":
             mission = "unrelated"
         else:
@@ -208,7 +208,7 @@ class PublicationDB(object):
                                  [article.id]).fetchone()[0]
         return bool(count)
 
-    def query(self, mission=None, science=None):
+    def query(self, mission='tess', science=None):
         """Query the database by mission and/or science.
 
         Returns
@@ -218,7 +218,7 @@ class PublicationDB(object):
         """
         # Build the query
         if mission is None:
-            where = "(mission = 'kepler' OR mission = 'k2') "
+            where = "(mission = 'tess') "
         else:
             where = "(mission = '{}') ".format(mission)
 
@@ -293,7 +293,7 @@ class PublicationDB(object):
         * # of unique author surnames.
         * # of citations.
         * # of peer-reviewed pubs.
-        * # of Kepler/K2/exoplanet/astrophysics.
+        * # of exoplanet/astrophysics.
         """
         metrics = {
                    "publication_count": 0,
@@ -501,7 +501,7 @@ class PublicationDB(object):
         log.info('Finished reviewing all articles for {}.'.format(month))
 
 
-def kpub(args=None):
+def tpub(args=None):
     """Lists the publications in the database in Markdown format."""
     parser = argparse.ArgumentParser(
         description="View the TESS publication list in markdown format.")
@@ -577,7 +577,7 @@ def kpub(args=None):
         print(output)
 
 
-def kpub_plot(args=None):
+def tpub_plot(args=None):
     """Creates beautiful plots of the database."""
     parser = argparse.ArgumentParser(
         description="Creates beautiful plots of the database.")
@@ -590,7 +590,7 @@ def kpub_plot(args=None):
     PublicationDB(args.f).plot()
 
 
-def kpub_update(args=None):
+def tpub_update(args=None):
     """Interactively query ADS for new publications."""
     parser = argparse.ArgumentParser(
         description="Interactively query ADS for new publications.")
@@ -605,7 +605,7 @@ def kpub_update(args=None):
     PublicationDB(args.f).update(month=args.month)
 
 
-def kpub_add(args=None):
+def tpub_add(args=None):
     """Add a publication with a known ADS bibcode."""
     parser = argparse.ArgumentParser(
         description="Add a paper to the TESS publication list.")
@@ -622,7 +622,7 @@ def kpub_add(args=None):
         db.add_by_bibcode(bibcode, interactive=True)
 
 
-def kpub_delete(args=None):
+def tpub_delete(args=None):
     """Deletes a publication using its ADS bibcode."""
     parser = argparse.ArgumentParser(
         description="Deletes a paper from the TESS publication list.")
@@ -639,7 +639,7 @@ def kpub_delete(args=None):
         db.delete_by_bibcode(bibcode)
 
 
-def kpub_import(args=None):
+def tpub_import(args=None):
     """Import publications from a csv file.
 
     The csv file must contain entries of the form "bibcode,mission,science".
@@ -665,7 +665,7 @@ def kpub_import(args=None):
         db.add_by_bibcode(col[0], mission=col[1], science=col[2].strip())
 
 
-def kpub_export(args=None):
+def tpub_export(args=None):
     """Export the bibcodes and classifications in CSV format."""
     parser = argparse.ArgumentParser(
         description="Export the TESS publication list in CSV format.")
@@ -682,7 +682,7 @@ def kpub_export(args=None):
         print('{0},{1},{2}'.format(row[0], row[1], row[2]))
 
 
-def kpub_spreadsheet(args=None):
+def tpub_spreadsheet(args=None):
     """Export the publication database to an Excel spreadsheet."""
     try:
         import pandas as pd
@@ -721,7 +721,7 @@ def kpub_spreadsheet(args=None):
                     ('title', metrics['title'][0])])
         spreadsheet.append(myrow)
 
-    output_fn = 'kepler-publications.xls'
+    output_fn = 'tess-publications.xls'
     print('Writing {}'.format(output_fn))
     pd.DataFrame(spreadsheet).to_excel(output_fn, index=False)
 
