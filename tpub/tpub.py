@@ -395,7 +395,7 @@ class PublicationDB(object):
         return names[idx_top], paper_count[idx_top]
 
     def update(self, month=None,
-                excluse=['johannes']
+                exclude=['johannes']
                # exclude=['keplerian', 'johannes', 'k<sub>2</sub>',
                #          "kepler equation", "kepler's equation", "xmm-newton",
                #          "kepler's law", "kepler's third law", "kepler problem",
