@@ -432,7 +432,8 @@ class PublicationDB(object):
         database = "astronomy"
         qry = ads.SearchQuery(q="""(ack:"TESS mission"
                                     OR ack:"Transiting Exoplanet Survey Satellite"
-                                    OR ack:"TESS team")
+                                    OR ack:"TESS team"
+                                    OR ack:"TESS")
                                    -ack:"partial support from"
                                    pubdate:"{}"
                                    database:"{}"
@@ -452,8 +453,6 @@ class PublicationDB(object):
         qry = ads.SearchQuery(q="""(
                                     abs:"TESS"
                                     OR abs:"Transiting Exoplanet Survey Satellite"
-                                    OR abs:"TIC"
-                                    OR abs:"TOI"
                                     OR title:"TESS"
                                     OR title:"Transiting Exoplanet Survey Satellite"
                                     OR full:"TESS photometry"
