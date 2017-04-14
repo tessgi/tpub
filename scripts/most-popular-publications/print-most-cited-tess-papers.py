@@ -1,5 +1,5 @@
 import datetime
-import kpub
+import tpub
 
 def print_articles(articles):
     for idx, art in enumerate(articles):
@@ -11,9 +11,9 @@ def print_articles(articles):
 
 
 if __name__ == "__main__":
-    db = kpub.PublicationDB()
-    articles = db.get_most_cited(mission="k2", top=25)
-    print("THE 25 MOST CITED K2 PAPERS\n"
+    db = tpub.PublicationDB()
+    articles = db.get_most_cited(mission="tess", top=10)
+    print("THE 10 MOST CITED TESS PAPERS\n"
           "===========================\n"
           "Last update: {}\n".format(datetime.datetime.now().strftime("%Y-%m-%d")))
     print_articles(articles)
