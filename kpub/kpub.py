@@ -83,7 +83,7 @@ class PublicationDB(object):
                                 science,
                                 metrics)""")
 
-    def add(self, article, mission="kepler", science="exoplanets"):
+    def add(self, article, mission="tess", science="exoplanets"):
         """Adds a single article object to the database.
 
         Parameters
@@ -122,11 +122,9 @@ class PublicationDB(object):
             return
 
         # First, highlight keywords in the title and abstract
-        colors = {'KEPLER': Highlight.BLUE,
-                  'KIC': Highlight.BLUE,
-                  'KOI': Highlight.BLUE,
-                  'K2': Highlight.RED,
-                  'EPIC': Highlight.RED,
+        colors = {'TESS': Highlight.BLUE,
+                  'TIC': Highlight.BLUE,
+                  'TOI': Highlight.BLUE,
                   'PLANET': Highlight.YELLOW}
         title = article.title[0]
         try:
@@ -154,13 +152,11 @@ class PublicationDB(object):
         print('')
 
         # Prompt the user to classify the paper by mission and science
-        print("=> Kepler [1], K2 [2], unrelated [3], or skip [any key]? ",
+        print("=> TESS [1], unrelated [3], or skip [any key]? ",
               end="")
         prompt = input()
         if prompt == "1":
             mission = "kepler"
-        elif prompt == "2":
-            mission = "k2"
         elif prompt == "3":
             mission = "unrelated"
         else:
@@ -282,12 +278,12 @@ class PublicationDB(object):
         """Saves beautiful plot of the database."""
         for extension in ['pdf', 'png']:
             plot.plot_by_year(self,
-                              "kpub-publication-rate.{}".format(extension))
+                              "tpub-publication-rate.{}".format(extension))
             plot.plot_by_year(self,
-                              "kpub-publication-rate-without-extrapolation.{}".format(extension),
+                              "tpub-publication-rate-without-extrapolation.{}".format(extension),
                               extrapolate=False)
             plot.plot_science_piechart(self,
-                                       "kpub-piechart.{}".format(extension))
+                                       "tpub-piechart.{}".format(extension))
 
     def get_metrics(self):
         """Returns a dictionary of overall publication statistics.
@@ -301,17 +297,15 @@ class PublicationDB(object):
         """
         metrics = {
                    "publication_count": 0,
-                   "kepler_count": 0,
-                   "k2_count": 0,
+                   "tess_count": 0,
                    "exoplanets_count": 0,
                    "astrophysics_count": 0,
                    "refereed_count": 0,
-                   "kepler_refereed_count": 0,
-                   "k2_refereed_count": 0,
+                   "tess_refereed_count": 0,
                    "citation_count": 0
                    }
         first_authors, authors = [], []
-        k2_authors, kepler_authors = [], []
+        tess_authors = [], []
         for article in self.query():
             api_response = article[2]
             js = json.loads(api_response)
@@ -323,10 +317,10 @@ class PublicationDB(object):
                 log.warning("{}: no science category".format(js["bibcode"]))
             first_authors.append(js["first_author_norm"])
             authors.extend(js["author_norm"])
-            if js["mission"] == 'k2':
-                k2_authors.extend(js["author_norm"])
+            if js["mission"] == 'tess':
+                tess_authors.extend(js["author_norm"])
             else:
-                kepler_authors.extend(js["author_norm"])
+                tess_authors.extend(js["author_norm"])
             if "REFEREED" in js["property"]:
                 metrics["refereed_count"] += 1
                 metrics["{}_refereed_count".format(js["mission"])] += 1
@@ -336,10 +330,9 @@ class PublicationDB(object):
                 log.warning("{}: no citation_count".format(js["bibcode"]))
         metrics["first_author_count"] = np.unique(first_authors).size
         metrics["author_count"] = np.unique(authors).size
-        metrics["kepler_author_count"] = np.unique(kepler_authors).size
-        metrics["k2_author_count"] = np.unique(k2_authors).size
+        metrics["tess_author_count"] = np.unique(tess_authors).size
         # Also compute fractions
-        for frac in ["kepler", "k2", "exoplanets", "astrophysics"]:
+        for frac in ["tess", "exoplanets", "astrophysics"]:
             metrics[frac+"_fraction"] = metrics[frac+"_count"] / metrics["publication_count"]
         return metrics
 
@@ -402,10 +395,11 @@ class PublicationDB(object):
         return names[idx_top], paper_count[idx_top]
 
     def update(self, month=None,
-               exclude=['keplerian', 'johannes', 'k<sub>2</sub>',
-                        "kepler equation", "kepler's equation", "xmm-newton",
-                        "kepler's law", "kepler's third law", "kepler problem",
-                        "kepler crater", "kepler's supernova", "kepler's snr"]
+                excluse=['johannes']
+               # exclude=['keplerian', 'johannes', 'k<sub>2</sub>',
+               #          "kepler equation", "kepler's equation", "xmm-newton",
+               #          "kepler's law", "kepler's third law", "kepler problem",
+               #          "kepler crater", "kepler's supernova", "kepler's snr"]
                ):
         """Query ADS for new publications.
 
@@ -423,7 +417,7 @@ class PublicationDB(object):
             return
 
         print(Highlight.YELLOW +
-              "Reminder: did you `git pull` kpub before running "
+              "Reminder: did you `git pull` tpub before running "
               "this command? [y/n] " +
               Highlight.END,
               end='')
@@ -433,13 +427,12 @@ class PublicationDB(object):
         if month is None:
             month = datetime.datetime.now().strftime("%Y-%m")
 
-        # First show all the papers with the Kepler funding message in the ack
+        # First show all the papers with the TESS funding message in the ack
         log.info("Querying ADS for acknowledgements (month={}).".format(month))
         database = "astronomy"
-        qry = ads.SearchQuery(q="""(ack:"Kepler mission"
-                                    OR ack:"K2 mission"
-                                    OR ack:"Kepler team"
-                                    OR ack:"K2 team")
+        qry = ads.SearchQuery(q="""(ack:"TESS mission"
+                                    OR ack:"Transiting Exoplanet Survey Satellite"
+                                    OR ack:"TESS team")
                                    -ack:"partial support from"
                                    pubdate:"{}"
                                    database:"{}"
@@ -448,7 +441,7 @@ class PublicationDB(object):
                               rows=9999999999)
         articles = list(qry)
         for idx, article in enumerate(articles):
-            statusmsg = ("Showing article {} out of {} that mentions Kepler "
+            statusmsg = ("Showing article {} out of {} that mentions TESS "
                          "in the acknowledgements.\n\n".format(
                             idx+1, len(articles)))
             self.add_interactively(article, statusmsg=statusmsg)
@@ -457,17 +450,14 @@ class PublicationDB(object):
         log.info("Querying ADS for titles and abstracts "
                  "(month={}).".format(month))
         qry = ads.SearchQuery(q="""(
-                                    abs:"Kepler"
-                                    OR abs:"K2"
-                                    OR abs:"KIC"
-                                    OR abs:"EPIC"
-                                    OR abs:"KOI"
-                                    OR title:"Kepler"
-                                    OR title:"K2"
-                                    OR full:"Kepler photometry"
-                                    OR full:"K2 photometry"
-                                    OR full:"Kepler lightcurve"
-                                    OR full:"K2 lightcurve"
+                                    abs:"TESS"
+                                    OR abs:"Transiting Exoplanet Survey Satellite"
+                                    OR abs:"TIC"
+                                    OR abs:"TOI"
+                                    OR title:"TESS"
+                                    OR title:"Transiting Exoplanet Survey Satellite"
+                                    OR full:"TESS photometry"
+                                    OR full:"TESS lightcurve"
                                     )
                                    pubdate:"{}"
                                    database:"{}"
@@ -514,19 +504,15 @@ class PublicationDB(object):
 def kpub(args=None):
     """Lists the publications in the database in Markdown format."""
     parser = argparse.ArgumentParser(
-        description="View the Kepler/K2 publication list in markdown format.")
+        description="View the TESS publication list in markdown format.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     parser.add_argument('-e', '--exoplanets', action='store_true',
                         help='Only show exoplanet publications.')
     parser.add_argument('-a', '--astrophysics', action='store_true',
                         help='Only show astrophysics publications.')
-    parser.add_argument('-k', '--kepler', action='store_true',
-                        help='Only show Kepler publications.')
-    parser.add_argument('-2', '--k2', action='store_true',
-                        help='Only show K2 publications.')
     parser.add_argument('-m', '--month', action='store_true',
                         help='Group the papers by month rather than year.')
     parser.add_argument('-s', '--save', action='store_true',
@@ -543,22 +529,16 @@ def kpub(args=None):
             else:
                 suffix = ""
                 title_suffix = ""
-            output_fn = 'kpub{}.md'.format(suffix)
+            output_fn = 'tpub{}.md'.format(suffix)
             db.save_markdown(output_fn,
                              group_by_month=bymonth,
-                             title="Kepler/K2 publications{}".format(title_suffix))
+                             title="TESS publications{}".format(title_suffix))
             for science in ['exoplanets', 'astrophysics']:
-                output_fn = 'kpub-{}{}.md'.format(science, suffix)
+                output_fn = 'tpub-{}{}.md'.format(science, suffix)
                 db.save_markdown(output_fn,
                                  group_by_month=bymonth,
                                  science=science,
-                                 title="Kepler/K2 {} publications{}".format(science, title_suffix))
-            for mission in ['kepler', 'k2']:
-                output_fn = 'kpub-{}{}.md'.format(mission, suffix)
-                db.save_markdown(output_fn,
-                                 group_by_month=bymonth,
-                                 mission=mission,
-                                 title="{} publications{}".format(mission.capitalize(), title_suffix))
+                                 title="TESS {} publications{}".format(science, title_suffix))
 
         # Finally, produce an overview page
         templatedir = os.path.join(PACKAGEDIR, 'templates')
@@ -586,12 +566,8 @@ def kpub(args=None):
         else:
             science = None
 
-        if args.kepler and not args.k2:
-            mission = "kepler"
-        elif args.k2 and not args.kepler:
-            mission = "k2"
-        else:
-            mission = None
+
+        mission = None
 
         output = db.to_markdown(group_by_month=args.month,
                                 mission=mission,
@@ -607,8 +583,8 @@ def kpub_plot(args=None):
         description="Creates beautiful plots of the database.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     args = parser.parse_args(args)
 
     PublicationDB(args.f).plot()
@@ -620,8 +596,8 @@ def kpub_update(args=None):
         description="Interactively query ADS for new publications.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     parser.add_argument('month', nargs='?', default=None,
                         help='Month to query, e.g. 2015-06.')
     args = parser.parse_args(args)
@@ -632,11 +608,11 @@ def kpub_update(args=None):
 def kpub_add(args=None):
     """Add a publication with a known ADS bibcode."""
     parser = argparse.ArgumentParser(
-        description="Add a paper to the Kepler/K2 publication list.")
+        description="Add a paper to the TESS publication list.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     parser.add_argument('bibcode', nargs='+',
                         help='ADS bibcode that identifies the publication.')
     args = parser.parse_args(args)
@@ -649,11 +625,11 @@ def kpub_add(args=None):
 def kpub_delete(args=None):
     """Deletes a publication using its ADS bibcode."""
     parser = argparse.ArgumentParser(
-        description="Deletes a paper from the Kepler/K2 publication list.")
+        description="Deletes a paper from the TESS publication list.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     parser.add_argument('bibcode', nargs='+',
                         help='ADS bibcode that identifies the publication.')
     args = parser.parse_args(args)
@@ -671,14 +647,14 @@ def kpub_import(args=None):
     hence this routine may take 10-20 minutes to complete.
     """
     parser = argparse.ArgumentParser(
-        description="Batch-import papers into the Kepler/K2 publication list "
+        description="Batch-import papers into the TESS publication list "
                     "from a CSV file. The CSV file must have three columns "
                     "(bibcode,mission,science) separated by commas. "
-                    "For example: '2004ApJ...610.1199G,kepler,astrophysics'.")
+                    "For example: '2004ApJ...610.1199G,tess,astrophysics'.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     parser.add_argument('csvfile',
                         help="Filename of the csv file to ingest.")
     args = parser.parse_args(args)
@@ -692,11 +668,11 @@ def kpub_import(args=None):
 def kpub_export(args=None):
     """Export the bibcodes and classifications in CSV format."""
     parser = argparse.ArgumentParser(
-        description="Export the Kepler/K2 publication list in CSV format.")
+        description="Export the TESS publication list in CSV format.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     args = parser.parse_args(args)
 
     db = PublicationDB(args.f)
@@ -714,11 +690,11 @@ def kpub_spreadsheet(args=None):
         print('ERROR: pandas needs to be installed for this feature.')
 
     parser = argparse.ArgumentParser(
-        description="Export the Kepler/K2 publication list in XLS format.")
+        description="Export the TESS publication list in XLS format.")
     parser.add_argument('-f', metavar='dbfile',
                         type=str, default=DEFAULT_DB,
-                        help="Location of the Kepler/K2 publication list db. "
-                             "Defaults to ~/.kpub.db.")
+                        help="Location of the TESS publication list db. "
+                             "Defaults to ~/.tpub.db.")
     args = parser.parse_args(args)
 
     db = PublicationDB(args.f)
