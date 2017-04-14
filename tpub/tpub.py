@@ -126,7 +126,10 @@ class PublicationDB(object):
                   'TIC': Highlight.BLUE,
                   'TOI': Highlight.BLUE,
                   'PLANET': Highlight.YELLOW,
-                  'Transiting Exoplanet Survey Satellite': Highlight.YELLOW,}
+                  'TRANSITING': Highlight.YELLOW,
+                  'EXOPLANET': Highlight.YELLOW,
+                  'SURVEY': Highlight.YELLOW,
+                  'SATELLITE': Highlight.YELLOW,}
         title = article.title[0]
         try:
             abstract = article.abstract
