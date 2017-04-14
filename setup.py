@@ -12,27 +12,27 @@ except (IOError, ImportError):
 
 # Command-line tools
 entry_points = {'console_scripts': [
-    'kpub = kpub:kpub',
-    'kpub-update = kpub:kpub_update',
-    'kpub-add = kpub:kpub_add',
-    'kpub-delete = kpub:kpub_delete',
-    'kpub-import = kpub:kpub_import',
-    'kpub-export = kpub:kpub_export',
-    'kpub-plot = kpub:kpub_plot',
-    'kpub-spreadsheet = kpub:kpub_spreadsheet'
+    'tpub = tpub:tpub',
+    'tpub-update = tpub:tpub_update',
+    'tpub-add = tpub:tpub_add',
+    'tpub-delete = tpub:tpub_delete',
+    'tpub-import = tpub:tpub_import',
+    'tpub-export = tpub:tpub_export',
+    'tpub-plot = tpub:tpub_plot',
+    'tpub-spreadsheet = tpub:tpub_spreadsheet'
 ]}
 
-setup(name='kpub',
+setup(name='tpub',
       version='1.1.0',
       description="A simple tool to keep track of the publications related "
-                  "to NASA's Kepler/K2 mission.",
+                  "to NASA's TESS mission.",
       long_description=long_description,
-      author='Geert Barentsen',
-      author_email='hello@geert.io',
+      author='Tom Barclay',
+      author_email='tom@tombarclay.com',
       license='MIT',
-      url='http://barentsen.github.io/kpub',
-      packages=['kpub'],
-      data_files=[('kpub/templates', ['kpub/templates/template.md', 'kpub/templates/template-overview.md'])],
+      url='',
+      packages=['tpub'],
+      data_files=[('tpub/templates', ['tpub/templates/template.md', 'tpub/templates/template-overview.md'])],
       install_requires=["jinja2",
                         "six",
                         "astropy",

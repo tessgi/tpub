@@ -45,12 +45,12 @@ mpl.rcParams["grid.linestyle"] = "-"
 mpl.rcParams["grid.linewidth"] = 1
 
 
-MISSIONS = ['kepler', 'k2']
+MISSIONS = ['tess']
 SCIENCES = ['exoplanets', 'astrophysics']
 
 
 def plot_by_year(db,
-                 output_fn='kpub-publication-rate.pdf',
+                 output_fn='tpub-publication-rate.pdf',
                  first_year=2009,
                  barwidth=0.75,
                  dpi=100,
@@ -98,23 +98,16 @@ def plot_by_year(db,
     # Now make the actual plot
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    plt.bar(np.array(list(counts['kepler'].keys())) - 0.5*barwidth,
-            counts['kepler'].values(),
-            label='Kepler',
+    plt.bar(np.array(list(counts['tess'].keys())) - 0.5*barwidth,
+            counts['tess'].values(),
+            label='TESS',
             facecolor="#3498db",
-            width=barwidth)
-    plt.bar(np.array(list(counts['k2'].keys())) - 0.5*barwidth,
-            counts['k2'].values(),
-            bottom=counts['kepler'].values(),
-            label='K2',
-            facecolor="#e74c3c",
             width=barwidth)
     # Also plot the extrapolated precition for the current year
     if extrapolate:
         now = datetime.datetime.now()
         fraction_of_year_passed = float(now.strftime("%-j")) / 365.2425
-        current_total = (counts['kepler'][current_year] +
-                         counts['k2'][current_year])
+        current_total = (counts['tess'][current_year])
         expected = (1/fraction_of_year_passed - 1) * current_total
         plt.bar(current_year - 0.5*barwidth,
                 expected,
@@ -150,7 +143,7 @@ def plot_by_year(db,
     plt.close()
 
 
-def plot_science_piechart(db, output_fn="kpub-piechart.pdf", dpi=100):
+def plot_science_piechart(db, output_fn="tpub-piechart.pdf", dpi=100):
     """Plots a piechart showing exoplanet vs astrophysics publications.
 
     Parameters
