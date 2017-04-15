@@ -102,7 +102,8 @@ def plot_by_year(db,
             counts['tess'].values(),
             label='TESS',
             facecolor="#3498db",
-            width=barwidth)
+            width=barwidth,
+            align='edge')
     # Also plot the extrapolated precition for the current year
     if extrapolate:
         now = datetime.datetime.now()
@@ -114,7 +115,8 @@ def plot_by_year(db,
                 bottom=current_total,
                 label='Extrapolation',
                 facecolor='#95a5a6',
-                width=barwidth)
+                width=barwidth,
+                align='edge')
 
     # Aesthetics
     plt.ylabel("Publications per year")
