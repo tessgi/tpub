@@ -3,8 +3,7 @@ Save_as: publications.html
 
 [TOC]
 
-We request that scientific publications using data obtained from the Kepler
-or K2 projects include one of the following acknowledgments:
+We request that scientific publications using data obtained from the TESS project include one of the following acknowledgments:
 
 *This paper includes data collected by the Kepler mission. Funding for
 the Kepler mission is provided by the NASA Science Mission
@@ -16,25 +15,24 @@ directorate.*
 
 ## Publication database
 
-The Guest Observer office curates a list of scientific publications
-pertaining to Kepler and K2.
+The Guest Investigator office curates a list of scientific publications
+pertaining to TESS.
 The database contains {{ metrics["publication_count"] }} publications,
 of which {{ metrics["refereed_count"] }} are peer-reviewed.
-It demonstrates the important impact of Kepler/K2 data
+It demonstrates the important impact of TESS data
 on astronomical research.
 
-You can access the publication list by mission:
+You can access the full publication list:
 
- * <a href="kpub-kepler.html">Kepler publications &raquo;</a>
- * <a href="kpub-k2.html">K2 publications &raquo;</a>
+ * <a href="tpub.html">TESS publications &raquo;</a>
 
-Or by topic:
+Or seach by topic:
 
- * <a href="kpub-exoplanets.html">Exoplanet publications &raquo;</a>
- * <a href="kpub-astrophysics.html">Astrophysics publications &raquo;</a>
+ * <a href="tpub-exoplanets.html">Exoplanet publications &raquo;</a>
+ * <a href="tpub-astrophysics.html">Astrophysics publications &raquo;</a>
 
 If you spot an error in the database, such as a missing entry,
-please get in touch or open an issue in the <a href="https://github.com/KeplerGO/kpub">GitHub repository</a> of the database.
+please get in touch or open an issue in the <a href="https://github.com/tessgi/tpub">GitHub repository</a> of the database.
 
 Last update: {{ now.strftime('%d %b %Y') }}.
 
@@ -43,18 +41,15 @@ Last update: {{ now.strftime('%d %b %Y') }}.
 ## Breakdown by year & mission
 
 The graph below shows the number of publications as a function
-of year and mission.
-The publication count for Kepler is {{ metrics["kepler_count"] }}
-while that of K2 is {{ metrics["k2_count"] }}.
-The number of refereed papers is {{ metrics["kepler_refereed_count"]}} for Kepler and {{ metrics["k2_refereed_count"] }} for K2.
+of year.
 
-![Publication rate by mission and year]({filename}/images/kpub/kpub-publication-rate.png)
+![Publication rate by year]({filename}/images/tpub/tpub-publication-rate.png)
 
 <hr/>
 
 ## Breakdown by subject
 
-Both Kepler and K2 data have been used for scientific applications
+Both TESS data have been used for scientific applications
 that reach far beyond exoplanet research.
 While {{ metrics["exoplanets_count"] }} works relate to exoplanets
 ({{ "%.0f"|format(metrics["exoplanets_fraction"]*100) }}%),
@@ -63,13 +58,13 @@ pertain to other areas of astrophysics
 ({{ "%.0f"|format(metrics["astrophysics_fraction"]*100) }}%).
 
 
-![Publications by subject]({filename}/images/kpub/kpub-piechart.png)
+![Publications by subject]({filename}/images/tpub/tpub-piechart.png)
 
 <hr/>
 
 ## Most-cited publications
 
-Kepler/K2 publications have cumulatively been cited
+TESS publications have cumulatively been cited
 {{ metrics["citation_count"] }} times.
 The list below shows the most-cited publications,
 based on the citation count obtained from NASA ADS.

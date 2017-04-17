@@ -309,7 +309,7 @@ class PublicationDB(object):
                    "citation_count": 0
                    }
         first_authors, authors = [], []
-        tess_authors = [], []
+        tess_authors = []
         for article in self.query():
             api_response = article[2]
             js = json.loads(api_response)
