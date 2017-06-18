@@ -38,7 +38,7 @@ Last update: {{ now.strftime('%d %b %Y') }}.
 The graph below shows the number of publications as a function
 of year.
 
-![Publication rate by year]({filename}/tpub/tpub-publication-rate.png)
+![Publication rate by year](images/tpub/tpub-publication-rate.png)
 
 <hr/>
 
@@ -53,7 +53,7 @@ pertain to other areas of astrophysics
 ({{ "%.0f"|format(metrics["astrophysics_fraction"]*100) }}%).
 
 
-![Publications by subject]({filename}/tpub/tpub-piechart.png)
+![Publications by subject](images/tpub/tpub-piechart.png)
 
 <hr/>
 
