@@ -1,4 +1,4 @@
-KeplerTitle: Publications
+Title: Publications
 Save_as: publications.html
 
 [TOC]
