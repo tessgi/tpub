@@ -1,21 +1,16 @@
-Title: Publications
+KeplerTitle: Publications
 Save_as: publications.html
 
 [TOC]
 
 We request that scientific publications using data obtained from the TESS project include one of the following acknowledgments:
 
-*This paper includes data collected by the Kepler mission. Funding for
-the Kepler mission is provided by the NASA Science Mission
-directorate.*
-
-*This paper includes data collected by the K2 mission. Funding for
-the K2 mission is provided by the NASA Science Mission
-directorate.*
+*This paper includes data collected by the TESS mission. Funding for
+the TESS mission is provided by the NASA Explorer Program.*
 
 ## Publication database
 
-The Guest Investigator office curates a list of scientific publications
+The TESS Science Support Center curates a list of scientific publications
 pertaining to TESS.
 The database contains {{ metrics["publication_count"] }} publications,
 of which {{ metrics["refereed_count"] }} are peer-reviewed.
