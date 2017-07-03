@@ -2,7 +2,7 @@
 
 ***A database of scientific publications related to NASA's TESS mission.***
 
-`ktpub` is a mission-specific tool that enables NASA's TESS Guest Investigator 
+`tpub` is a mission-specific tool that enables NASA's TESS Guest Investigator 
 Office to keep track of its mission's scientific publications in an easy way. 
 It leverages SQLite and the [ADS API](https://github.com/adsabs/adsabs-dev-api)
 (using Andy Casey's [awesome Python client](https://github.com/andycasey/ads)) 
