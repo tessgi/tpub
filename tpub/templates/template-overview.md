@@ -19,12 +19,12 @@ on astronomical research.
 
 You can access the full publication list:
 
- * <a href="tpub.html">TESS publications &raquo;</a>
+ * [TESS publications &raquo;](tpub.html)
 
 Or seach by topic:
 
- * <a href="tpub-exoplanets.html">Exoplanet publications &raquo;</a>
- * <a href="tpub-astrophysics.html">Astrophysics publications &raquo;</a>
+ * [Exoplanet publications &raquo;](tpub-exoplanets.html)
+ * [Astrophysics publications &raquo;](tpub-astrophysics.html)
 
 If you spot an error in the database, such as a missing entry,
 please get in touch or open an issue in the <a href="https://github.com/tessgi/tpub">GitHub repository</a> of the database.
@@ -91,7 +91,7 @@ within the last 90 days.
 
 -->
 
-## Most-active authors
+<!-- ## Most-active authors
 
 The entries in the publication database have been authored and co-authored
 by a total of {{ metrics["author_count"] }} unique author names.
@@ -99,4 +99,4 @@ Here we list the most-active authors, defined as those with six or more first-au
 
 {% for author in most_active_first_authors %}
  * {{author[0]}} ({{ "%.0f"|format(author[1]) }} publications)
-{% endfor -%}
+{% endfor -%} -->
