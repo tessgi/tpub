@@ -51,7 +51,7 @@ SCIENCES = ['exoplanets', 'astrophysics']
 
 def plot_by_year(db,
                  output_fn='tpub-publication-rate.pdf',
-                 first_year=2009,
+                 first_year=2013,
                  barwidth=0.75,
                  dpi=100,
                  extrapolate=True):
@@ -88,7 +88,7 @@ def plot_by_year(db,
 
         cur = db.con.execute("SELECT year, COUNT(*) FROM pubs "
                           "WHERE mission = ? "
-                          "AND year >= '2009' "
+                          "AND year >= '2013' "
                           "GROUP BY year;",
                           [mission])
         rows = list(cur.fetchall())
