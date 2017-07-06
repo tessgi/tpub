@@ -19,12 +19,12 @@ on astronomical research.
 
 You can access the full publication list:
 
- * [TESS publications &raquo;](tpub.html)
+ * [TESS publications >>](tpub.html)
 
 Or seach by topic:
 
- * [Exoplanet publications &raquo;](tpub-exoplanets.html)
- * [Astrophysics publications &raquo;](tpub-astrophysics.html)
+ * [Exoplanet publications >>](tpub-exoplanets.html)
+ * [Astrophysics publications >>](tpub-astrophysics.html)
 
 If you spot an error in the database, such as a missing entry,
 please get in touch or open an issue in the <a href="https://github.com/tessgi/tpub">GitHub repository</a> of the database.
