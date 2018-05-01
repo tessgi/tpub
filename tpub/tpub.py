@@ -22,7 +22,7 @@ except Exception:
 import jinja2
 from six.moves import input  # needed to support Python 2
 from astropy import log
-from astropy.utils.console import ProgressBar
+from tqdm import tqdm
 
 from . import plot, PACKAGEDIR
 
@@ -663,7 +663,7 @@ def tpub_import(args=None):
     args = parser.parse_args(args)
 
     db = PublicationDB(args.f)
-    for line in ProgressBar(open(args.csvfile, 'r').readlines()):
+    for line in tqdm(open(args.csvfile, 'r').readlines()):
         col = line.split(',')  # Naive csv parsing
         db.add_by_bibcode(col[0], mission=col[1], science=col[2].strip())
 
