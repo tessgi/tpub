@@ -490,7 +490,7 @@ class PublicationDB(object):
             try:
                 if "NOT REFEREED" in article.property and article.pub != "ArXiv e-prints":
                     ignore = True
-            except (AttributeError, ads.exceptions.APIResponseError):
+            except (AttributeError, TypeError, ads.exceptions.APIResponseError):
                 pass  # no .pub attribute
 
             # Ignore proposals and cospar abstracts
