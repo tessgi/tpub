@@ -129,6 +129,7 @@
 2017sf2a.conf...85B,unrelated,
 2018A&A...610A..86S,unrelated,
 2018A&A...616A..39M,unrelated,
+2018A&A...616A.148B,unrelated,
 2018A&C....23...72N,unrelated,
 2018AJ....155...22S,tess,astrophysics
 2018AJ....155...39O,tess,astrophysics
@@ -140,6 +141,10 @@
 2018AJ....155..244B,unrelated,
 2018AJ....156...22Y,unrelated,
 2018AJ....156...82C,tess,exoplanets
+2018AJ....156...93Z,unrelated,
+2018AJ....156...99L,unrelated,
+2018AJ....156..102S,tess,astrophysics
+2018AJ....156..132O,tess,astrophysics
 2018ATel11964....1B,tess,astrophysics
 2018ATel11976....1B,tess,astrophysics
 2018ApJ...853..122R,unrelated,
@@ -150,7 +155,11 @@
 2018ApJ...858L...7T,unrelated,
 2018ApJ...859..167E,unrelated,
 2018ApJ...861L...5G,unrelated,
+<<<<<<< HEAD
 2018ApJ...862...53S,unrelated,
+2018ApJ...864L..28R,unrelated,
+=======
+>>>>>>> parent of e3fa58d... Regular db update
 2018ApPhL.112m2601C,unrelated,
 2018IAUS..330..127M,unrelated,
 2018JAVSO..46...86C,unrelated,
@@ -168,6 +177,7 @@
 2018MNRAS.tmp.1650L,unrelated,
 2018MNRAS.tmp.1784P,unrelated,
 2018MNRAS.tmp.1795S,unrelated,
+2018MNRAS.tmp.2234B,unrelated,
 2018MNRAS.tmpL.127Y,unrelated,
 2018Natur.556..158W,tess,exoplanets
 2018PASP..130d4401L,tess,exoplanets
@@ -213,10 +223,14 @@
 2018arXiv180701908N,unrelated,
 2018arXiv180704420S,unrelated,
 2018arXiv180708592D,unrelated,
-2018arXiv180711129H,tess,exoplanets
-2018arXiv180711922Y,tess,exoplanets
 2018arXiv180802187S,unrelated,
 2018arXiv180806649B,unrelated,
 2018arXiv180807043B,unrelated,
 2018arXiv180807059R,unrelated,
 2018arXiv180808391B,unrelated,
+2018arXiv180810856M,tess,astrophysics
+2018arXiv180901789Z,tess,exoplanets
+2018arXiv180905967H,tess,exoplanets
+2018arXiv180907242V,tess,exoplanets
+2018arXiv180907403P,tess,astrophysics
+2018arXiv180907573G,tess,exoplanets
