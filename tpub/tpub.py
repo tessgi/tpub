@@ -190,6 +190,8 @@ class PublicationDB(object):
             # Print useful warnings
             if bibcode != article.bibcode:
                 log.warning("Requested {} but ADS API returned {}".format(bibcode, article.bibcode))
+            if article.property is None:
+                log.warning("{} returned None for article.property.".format(article.bibcode))
             if 'NONARTICLE' in article.property:
                 # Note: data products are sometimes tagged as NONARTICLE
                 log.warning("{} is not an article.".format(article.bibcode))
