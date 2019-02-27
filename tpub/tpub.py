@@ -253,7 +253,11 @@ class PublicationDB(object):
                 group = group[:-3] + "-01"
             if group not in articles:
                 articles[group] = []
-            articles[group].append(json.loads(row[2]))
+            art = json.loads(row[2])
+            # The markdown template depends on "property" being iterable
+            if art["property"] is None:
+                art["property"] = []
+            articles[group].append(art)
 
         templatedir = os.path.join(PACKAGEDIR, 'templates')
         env = jinja2.Environment(loader=jinja2.FileSystemLoader(templatedir))
@@ -327,12 +331,15 @@ class PublicationDB(object):
                 tess_authors.extend(js["author_norm"])
             else:
                 tess_authors.extend(js["author_norm"])
-            if "REFEREED" in js["property"]:
-                metrics["refereed_count"] += 1
-                metrics["{}_refereed_count".format(js["mission"])] += 1
+            try:
+                if "REFEREED" in js["property"]:
+                    metrics["refereed_count"] += 1
+                    metrics["{}_refereed_count".format(js["mission"])] += 1
+            except TypeError:  # proprety is None
+                pass
             try:
                 metrics["citation_count"] += js["citation_count"]
-            except KeyError:
+            except (KeyError, TypeError):
                 log.warning("{}: no citation_count".format(js["bibcode"]))
         metrics["first_author_count"] = np.unique(first_authors).size
         metrics["author_count"] = np.unique(authors).size
