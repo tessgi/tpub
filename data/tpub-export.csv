@@ -214,7 +214,6 @@
 2018arXiv180303730B,unrelated,
 2018arXiv180304003C,unrelated,
 2018arXiv180304010L,unrelated,
-2018arXiv180405065P,unrelated,
 2018arXiv180405900S,tess,astrophysics
 2018arXiv180406982B,tess,astrophysics
 2018arXiv180500956V,tess,exoplanets
@@ -234,7 +233,6 @@
 2018arXiv181102324N,unrelated,
 2018arXiv181103639H,unrelated,
 2018arXiv181105518J,tess,exoplanets
-2018arXiv181106020S,tess,exoplanets
 2018arXiv181206150C,unrelated,
 2018arXiv181208145C,tess,exoplanets
 2018arXiv181209227N,unrelated,
@@ -304,6 +302,9 @@
 2019AJ....157..142G,tess,exoplanets
 2019AJ....157..143B,unrelated,
 2019AJ....157..149L,unrelated,
+2019AJ....157..171K,unrelated,
+2019AJ....157..178S,tess,exoplanets
+2019AJ....157..180P,unrelated,
 2019AcA....69...55B,unrelated,
 2019ApJ...871L..24V,tess,exoplanets
 2019ApJ...872L...9P,tess,astrophysics
@@ -326,14 +327,13 @@
 2019MNRAS.485.3876G,unrelated,
 2019MNRAS.485.4703A,unrelated,
 2019MNRAS.485.5498W,unrelated,
-2019MNRAS.tmp..737D,tess,astrophysics
-2019MNRAS.tmp..800M,unrelated,
+2019MNRAS.486..251D,tess,astrophysics
+2019MNRAS.486..796M,unrelated,
 2019MNRAS.tmp..956H,unrelated,
 2019MNRAS.tmp..979H,tess,astrophysics
 2019Msngr.175...35B,unrelated,
 2019PASP..131c4401D,tess,exoplanets
 2019arXiv190100005J,tess,astrophysics
-2019arXiv190100051D,tess,exoplanets
 2019arXiv190100443G,tess,astrophysics
 2019arXiv190101643H,tess,exoplanets
 2019arXiv190102017G,unrelated,
@@ -343,9 +343,7 @@
 2019arXiv190109930D,tess,astrophysics
 2019arXiv190109950R,tess,exoplanets
 2019arXiv190111231A,unrelated,
-2019arXiv190203165B,unrelated,
 2019arXiv190203900K,tess,exoplanets
-2019arXiv190204093A,unrelated,
 2019arXiv190208544O,tess,exoplanets
 2019arXiv190209710C,tess,exoplanets
 2019arXiv190209854B,tess,astrophysics
@@ -354,7 +352,6 @@
 2019arXiv190300490L,tess,astrophysics
 2019arXiv190301547G,tess,astrophysics
 2019arXiv190302061Z,tess,astrophysics
-2019arXiv190302336K,unrelated,
 2019arXiv190302573B,tess,exoplanets
 2019arXiv190305419D,tess,exoplanets
 2019arXiv190305623G,tess,exoplanets
@@ -371,11 +368,9 @@
 2019arXiv190311071Z,tess,astrophysics
 2019arXiv190312182L,tess,exoplanets
 2019arXiv190401591B,tess,exoplanets
-2019arXiv190401973H,unrelated,
 2019arXiv190402161C,unrelated,
 2019arXiv190402171F,tess,astrophysics
 2019arXiv190402726Y,tess,exoplanets
-2019arXiv190402949H,tess,astrophysics
 2019arXiv190404832M,unrelated,
 2019arXiv190407161K,unrelated,
 2019arXiv190407362L,tess,astrophysics
