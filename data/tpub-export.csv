@@ -222,7 +222,6 @@
 2018arXiv180609282W,tess,exoplanets
 2018arXiv180711129H,tess,exoplanets
 2018arXiv180806649B,unrelated,
-2018arXiv180810856M,tess,astrophysics
 2018arXiv181008689C,unrelated,
 2018arXiv181012554B,unrelated,
 2018arXiv181206150C,unrelated,
@@ -442,13 +441,14 @@
 2019MNRAS.489.1304B,unrelated,
 2019MNRAS.489.1644W,unrelated,
 2019MNRAS.489.4125V,unrelated,
-2019MNRAS.tmp.2077P,unrelated,
+2019MNRAS.489.5764P,unrelated,
 2019MNRAS.tmp.2088H,tess,astrophysics
 2019MNRAS.tmp.2120J,tess,astrophysics
 2019MNRAS.tmp.2175J,unrelated,
 2019MNRAS.tmp.2214R,unrelated,
 2019MNRAS.tmp.2234S,unrelated,
 2019MNRAS.tmp.2246B,unrelated,
+2019MNRAS.tmp.2330J,unrelated,
 2019Msngr.175...35B,unrelated,
 2019NatAs...3..760B,unrelated,
 2019NatAs.tmp..409G,tess,exoplanets
@@ -460,9 +460,9 @@
 2019PASP..131i4502F,tess,astrophysics
 2019PASP..131j8001H,unrelated,
 2019PASP..131k5003A,unrelated,
-2019RNAAS...3f..81B,tess,astrophysics
-2019RNAAS...3g..94B,tess,astrophysics
-2019RNAAS...3g.111S,tess,astrophysics
+2019RNAAS...3...81B,tess,astrophysics
+2019RNAAS...3...94B,tess,astrophysics
+2019RNAAS...3..111S,tess,astrophysics
 2019arXiv190100443G,tess,astrophysics
 2019arXiv190102017G,unrelated,
 2019arXiv190107567C,unrelated,
@@ -486,7 +486,6 @@
 2019arXiv190707830W,unrelated,
 2019arXiv190708972M,tess,astrophysics
 2019arXiv190709480E,unrelated,
-2019arXiv190710609J,unrelated,
 2019arXiv190710735H,unrelated,
 2019arXiv190711098W,unrelated,
 2019arXiv190711666L,unrelated,
