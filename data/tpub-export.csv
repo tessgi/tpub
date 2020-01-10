@@ -502,16 +502,12 @@
 2019MNRAS.tmp.2769E,tess,exoplanets
 2019MNRAS.tmp.2805G,tess,exoplanets
 2019MNRAS.tmp.2865C,tess,astrophysics
-2019MNRAS.tmp.2930C,tess,astrophysics
-2019MNRAS.tmp.3006G,unrelated,
-2019MNRAS.tmp.3068O,unrelated,
 2019MNRAS.tmp.3168S,unrelated,
 2019MNRAS.tmp.3179P,tess,astrophysics
 2019MNRAS.tmp.3189L,tess,exoplanets
-2019MNRAS.tmpL.173S,tess,exoplanets
 2019Msngr.175...35B,unrelated,
 2019NatAs...3..760B,unrelated,
-2019NatAs.tmp..420G,tess,exoplanets
+2019NatAs...3.1099G,tess,exoplanets
 2019NatAs.tmp..452M,unrelated,
 2019NewA...7301276C,unrelated,
 2019PASP..131c4401D,tess,exoplanets
@@ -531,8 +527,6 @@
 2019arXiv191112628C,tess,exoplanets
 2019arXiv191201017R,tess,exoplanets
 2019arXiv191201102D,tess,astrophysics
-2019arXiv191201186M,unrelated,
-2019arXiv191201609O,unrelated,
 2019arXiv191202170C,unrelated,
 2019arXiv191202687D,tess,astrophysics
 2019arXiv191202821C,unrelated,
@@ -565,6 +559,9 @@
 2020AJ....159...19Z,tess,exoplanets
 2020MNRAS.491...13J,unrelated,
 2020MNRAS.491.4365C,tess,astrophysics
+2020MNRAS.491.5216G,unrelated,
+2020MNRAS.491.5287O,unrelated,
+2020MNRAS.492L..17S,tess,exoplanets
 2020arXiv200100671C,unrelated,
 2020arXiv200100952G,tess,exoplanets
 2020arXiv200100954R,tess,exoplanets
