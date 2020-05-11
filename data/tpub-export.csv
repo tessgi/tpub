@@ -572,9 +572,11 @@
 2020AJ....159..202H,unrelated,
 2020AJ....159..211C,unrelated,
 2020AJ....159..219D,tess,exoplanets
+2020AJ....159..223D,unrelated,
 2020AJ....159..235L,unrelated,
 2020AJ....159..236L,unrelated,
 2020AJ....159..241D,tess,exoplanets
+2020AJ....159..242W,unrelated,
 2020ApJ...888...43C,unrelated,
 2020ApJ...888...49W,tess,astrophysics
 2020ApJ...888...63A,tess,exoplanets
@@ -595,6 +597,7 @@
 2020ApJ...893...67M,unrelated,
 2020ApJ...893..163G,unrelated,
 2020ApJ...893..166D,unrelated,
+2020ApJ...894...53K,tess,astrophysics
 2020ApJS..246...11F,unrelated,
 2020ApJS..247...26P,tess,astrophysics
 2020CoSka..50..430M,tess,astrophysics
@@ -641,6 +644,9 @@
 2020MNRAS.tmp.1223C,tess,exoplanets
 2020MNRAS.tmp.1252B,tess,exoplanets
 2020MNRAS.tmp.1258C,tess,astrophysics
+2020MNRAS.tmp.1386E,tess,exoplanets
+2020MNRAS.tmp.1395M,tess,astrophysics
+2020MNRAS.tmp.1399M,unrelated,
 2020MNRAS.tmpL..64B,tess,exoplanets
 2020MNRAS.tmpL..66K,tess,astrophysics
 2020MNRAS.tmpL..72J,tess,astrophysics
@@ -706,6 +712,7 @@
 2020arXiv200500047M,tess,exoplanets
 2020arXiv200500272J,tess,astrophysics
 2020arXiv200501684E,tess,exoplanets
+2020arXiv200502070M,unrelated,
 2020arXiv200502411V,unrelated,
 2020arXiv200502423M,unrelated,
 2020arXiv200502541R,tess,astrophysics
