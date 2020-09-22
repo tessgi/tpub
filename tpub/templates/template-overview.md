@@ -6,7 +6,7 @@ Save_as: publications.html
 We request that scientific publications using data obtained from the TESS project include one of the following acknowledgments:
 
 *This paper includes data collected by the TESS mission. Funding for
-the TESS mission is provided by the NASA Explorer Program.*
+the TESS mission is provided by the NASA's Science Mission Directorate.*
 
 ## Publication database
 
