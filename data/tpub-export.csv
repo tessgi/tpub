@@ -574,6 +574,9 @@
 2020A&A...642A.101P,unrelated,
 2020A&A...642A.115C,unrelated,
 2020A&A...642A.121L,tess,exoplanets
+2020A&A...642A.173N,tess,exoplanets
+2020A&A...642A.180P,tess,astrophysics
+2020A&A...642A.188S,tess,astrophysics
 2020AAS...23515904G,unrelated,
 2020AAS...23535702B,unrelated,
 2020AJ....159....5S,tess,exoplanets
@@ -697,6 +700,7 @@
 2020ApJ...902...36T,unrelated,
 2020ApJ...902...73I,unrelated,
 2020ApJ...902...92R,unrelated,
+2020ApJ...902..115H,tess,astrophysics
 2020ApJS..246...11F,unrelated,
 2020ApJS..247...26P,tess,astrophysics
 2020ApJS..248...19T,tess,astrophysics
@@ -705,6 +709,7 @@
 2020BAAA..61C...78U,unrelated,
 2020CoSka..50..430M,tess,astrophysics
 2020CoSka..50..463M,unrelated,
+2020DPS....5221002W,unrelated,
 2020ERExp...2a5011Y,unrelated,
 2020ExA....50...73D,unrelated,
 2020FrASS...7...47C,unrelated,
@@ -785,6 +790,9 @@
 2020MNRAS.498.6034M,tess,astrophysics
 2020MNRAS.498L..15S,tess,astrophysics
 2020MNRAS.499..524G,unrelated,
+2020MNRAS.499.2116M,tess,astrophysics
+2020MNRAS.499.3019M,tess,astrophysics
+2020MNRAS.499L.111K,tess,exoplanets
 2020MNRAS.tmp.1386E,tess,exoplanets
 2020MNRAS.tmp.2419M,unrelated,
 2020MNRAS.tmp.2853M,tess,astrophysics
@@ -794,6 +802,7 @@
 2020MNRAS.tmp.2925S,tess,astrophysics
 2020MNRAS.tmp.2941S,unrelated,
 2020MNRAS.tmp.2950M,tess,astrophysics
+2020MNRAS.tmp.3009B,tess,astrophysics
 2020NatAs...4...67M,unrelated,
 2020NatAs...4..399S,unrelated,
 2020NatAs...4..684H,tess,astrophysics
@@ -866,7 +875,15 @@
 2020arXiv201004724M,unrelated,
 2020arXiv201006596V,tess,astrophysics
 2020arXiv201007323B,tess,astrophysics
+2020arXiv201007699Z,tess,astrophysics
 2020arXiv201009766K,tess,exoplanets
+2020arXiv201011977M,tess,exoplanets
+2020arXiv201012404R,tess,astrophysics
+2020arXiv201012744D,tess,exoplanets
+2020arXiv201012745C,tess,exoplanets
+2020arXiv201013791R,tess,astrophysics
+2020arXiv201013905L,tess,astrophysics
+2020arXiv201014436S,tess,exoplanets
 2020rfma.book...45B,unrelated,
 2020svos.conf...53B,unrelated,
 2020svos.conf..101C,tess,astrophysics
