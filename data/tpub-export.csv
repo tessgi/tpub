@@ -765,6 +765,7 @@
 2020IJAsB..19..126W,unrelated,
 2020INASR...5..243S,tess,exoplanets
 2020Icar..34513721M,unrelated,
+2020JAP...128v4501D,unrelated,
 2020JAVSO..48..106S,tess,exoplanets
 2020JAVSO..48..171P,tess,astrophysics
 2020JAVSO..48..216N,tess,astrophysics
@@ -1054,6 +1055,10 @@
 2021AJ....162...25A,unrelated,
 2021AJ....162...32Q,unrelated,
 2021AJ....162...46D,unrelated,
+2021AJ....162...48L,unrelated,
+2021AJ....162...49L,tess,astrophysics
+2021AJ....162...54H,tess,exoplanets
+2021AJ....162...62D,tess,exoplanets
 2021AN....342..531Z,tess,astrophysics
 2021AcA....71...55B,tess,astrophysics
 2021AnABC..93..628L,unrelated,
@@ -1083,6 +1088,7 @@
 2021ApJ...914L...3H,tess,astrophysics
 2021ApJ...915...13S,tess,astrophysics
 2021ApJ...915...19G,tess,astrophysics
+2021ApJ...916L..11Z,tess,exoplanets
 2021ApJS..253...11P,tess,astrophysics
 2021ApJS..253...35T,tess,astrophysics
 2021ApJS..254...13G,unrelated,
@@ -1182,6 +1188,8 @@
 2021MNRAS.505.4684G,tess,exoplanets
 2021MNRAS.505.4956B,tess,astrophysics
 2021MNRAS.505.5340M,unrelated,
+2021MNRAS.505.5725K,tess,astrophysics
+2021MNRAS.505.6166S,tess,astrophysics
 2021MNRAS.506..150B,unrelated,
 2021MNRAS.506..306S,tess,astrophysics
 2021MNRAS.506..759V,unrelated,
@@ -1313,3 +1321,13 @@
 2021arXiv210711211S,tess,astrophysics
 2021arXiv210711393M,tess,astrophysics
 2021arXiv210712204S,tess,astrophysics
+2021arXiv210800582C,unrelated,
+2021arXiv210800670C,unrelated,
+2021arXiv210801088M,tess,astrophysics
+2021arXiv210801241H,tess,astrophysics
+2021arXiv210801917I,tess,astrophysics
+2021arXiv210802149S,tess,exoplanets
+2021arXiv210802208L,tess,exoplanets
+2021arXiv210802294S,tess,exoplanets
+2021arXiv210802310O,tess,exoplanets
+2021arXiv210802552C,tess,astrophysics
