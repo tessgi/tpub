@@ -1531,6 +1531,7 @@
 2022A&A...667L..11A,tess,exoplanets
 2022A&A...668A...1M,unrelated,
 2022A&A...668A..17S,tess,exoplanets
+2022A&A...668A..29G,tess,exoplanets
 2022A&A...668L...1J,tess,exoplanets
 2022A&C....3800511G,unrelated,
 2022AJ....163....7F,unrelated,
@@ -1746,6 +1747,7 @@
 2022ApJ...939...94M,tess,exoplanets
 2022ApJ...940...19C,tess,astrophysics
 2022ApJ...940...27D,tess,astrophysics
+2022ApJ...940..126F,tess,astrophysics
 2022ApJS..258....8M,tess,astrophysics
 2022ApJS..258...16P,tess,astrophysics
 2022ApJS..258...24K,tess,astrophysics
@@ -1763,6 +1765,8 @@
 2022ApJS..263....1R,unrelated,
 2022ApJS..263...12Z,unrelated,
 2022ApJS..263...14C,tess,astrophysics
+2022ApJS..263...34C,tess,astrophysics
+2022ApJS..263...41A,tess,astrophysics
 2022BAAA...63...48C,tess,astrophysics
 2022CQGra..39a5013B,unrelated,
 2022ExA....53..417C,unrelated,
@@ -1772,6 +1776,8 @@
 2022Galax..10...97M,tess,astrophysics
 2022JATIS...8b7002R,tess,astrophysics
 2022JApA...43...42W,tess,astrophysics
+2022JApA...43...92S,tess,astrophysics
+2022JApA...43...94W,tess,astrophysics
 2022JCAP...04..037P,unrelated,
 2022JLTP..tmp..101F,unrelated,
 2022JLTP..tmp..202A,unrelated,
@@ -1976,6 +1982,7 @@
 2022PASJ...74.1295Y,tess,astrophysics
 2022PASJ...74L...1F,tess,exoplanets
 2022PASJ..tmp...92Y,tess,astrophysics
+2022PASJ..tmp..121S,unrelated,
 2022PASP..134b4401Y,tess,astrophysics
 2022PASP..134c5003L,unrelated,
 2022PASP..134e4202C,tess,astrophysics
@@ -1995,6 +2002,7 @@
 2022RAA....22j5006X,tess,astrophysics
 2022RAA....22k5004W,tess,astrophysics
 2022RAA....22k5006B,tess,astrophysics
+2022RAA....22l5012Y,tess,astrophysics
 2022RMxAA..58....3C,tess,astrophysics
 2022RMxAA..58...99E,tess,exoplanets
 2022RNAAS...6...91L,tess,astrophysics
@@ -2131,4 +2139,27 @@
 2022arXiv221110300I,unrelated,
 2022arXiv221200558K,tess,astrophysics
 2022arXiv221200993C,tess,astrophysics
+2022arXiv221202357G,tess,astrophysics
+2022arXiv221202502C,tess,astrophysics
+2022arXiv221202509R,unrelated,
+2022arXiv221202514O,tess,astrophysics
+2022arXiv221202542R,tess,exoplanets
+2022arXiv221202553P,unrelated,
+2022arXiv221202595S,tess,astrophysics
+2022arXiv221202788S,tess,astrophysics
+2022arXiv221202903C,tess,astrophysics
+2022arXiv221202950U,tess,astrophysics
+2022arXiv221203264N,tess,astrophysics
+2022arXiv221203266W,tess,exoplanets
+2022arXiv221203757S,tess,exoplanets
+2022arXiv221203953Z,tess,exoplanets
+2022arXiv221204307L,tess,exoplanets
+2022arXiv221204424B,tess,astrophysics
+2022arXiv221204639W,tess,astrophysics
+2022arXiv221205016G,tess,exoplanets
+2022arXiv221205797M,tess,astrophysics
+2022arXiv221206266F,tess,exoplanets
+2022arXiv221206869H,unrelated,
+2022arXiv221207332S,tess,exoplanets
+2022arXiv221207450M,tess,exoplanets
 2023MNRAS.518L..31M,tess,exoplanets
