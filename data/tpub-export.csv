@@ -2150,6 +2150,10 @@
 2023A&A...672A..24K,tess,exoplanets
 2023A&A...672A..31O,tess,astrophysics
 2023A&A...672A..37I,tess,astrophysics
+2023A&A...672A..70P,tess,exoplanets
+2023A&A...672A..78M,unrelated,
+2023A&A...672A..93M,unrelated,
+2023A&A...672A..94D,tess,exoplanets
 2023A&C....4200670A,tess,astrophysics
 2023A&C....4200686G,unrelated,
 2023AJ....165....6S,tess,astrophysics
@@ -2187,6 +2191,8 @@
 2023AJ....165..169D,tess,exoplanets
 2023AJ....165..179T,tess,exoplanets
 2023AJ....165..182K,tess,astrophysics
+2023AJ....165..187Q,tess,astrophysics
+2023AJ....165..194W,tess,astrophysics
 2023ApJ...942L..38D,tess,astrophysics
 2023ApJ...943...53K,tess,astrophysics
 2023ApJ...943..147S,tess,astrophysics
@@ -2266,6 +2272,7 @@
 2023MNRAS.521.1200B,tess,exoplanets
 2023MNRAS.521.1233L,unrelated,
 2023MNRAS.521.2874R,tess,astrophysics
+2023MNRAS.521.4765K,tess,astrophysics
 2023MNRAS.521L...1B,tess,astrophysics
 2023MNRAS.tmp..122R,tess,astrophysics
 2023MNRAS.tmp..272S,tess,astrophysics
@@ -2287,6 +2294,7 @@
 2023MNRAS.tmp..809K,tess,astrophysics
 2023MNRAS.tmp..865J,tess,astrophysics
 2023MNRAS.tmp..893D,tess,exoplanets
+2023MNRAS.tmp..975G,tess,astrophysics
 2023MNRAS.tmpL..12B,tess,astrophysics
 2023NatAs...7..198Z,tess,exoplanets
 2023Natur.615..605G,tess,astrophysics
@@ -2297,6 +2305,7 @@
 2023OEJV..235....1C,tess,astrophysics
 2023PASJ...75....1I,unrelated,
 2023PASJ...75..103S,unrelated,
+2023PASJ...75..476S,tess,astrophysics
 2023PASJ..tmp...26S,tess,astrophysics
 2023PASP..135a8002E,tess,exoplanets
 2023RAA....23a5002S,tess,astrophysics
