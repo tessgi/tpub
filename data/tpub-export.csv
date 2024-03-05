@@ -2738,6 +2738,8 @@
 2024A&A...682A.102P,tess,exoplanets
 2024A&A...682A.129M,tess,exoplanets
 2024A&A...682A.135C,tess,exoplanets
+2024A&A...683A...1S,tess,exoplanets
+2024A&A...683A...2L,unrelated,
 2024AJ....167....1W,tess,exoplanets
 2024AJ....167....4H,tess,exoplanets
 2024AJ....167...20Z,unrelated,
@@ -2748,6 +2750,13 @@
 2024AJ....167...60T,tess,exoplanets
 2024AJ....167...70B,tess,exoplanets
 2024AJ....167...74L,tess,exoplanets
+2024AJ....167...89Z,tess,exoplanets
+2024AJ....167...90K,tess,exoplanets
+2024AJ....167..101C,tess,astrophysics
+2024AJ....167..107N,tess,exoplanets
+2024AJ....167..109P,tess,exoplanets
+2024AJ....167..113N,tess,astrophysics
+2024AJ....167..139T,tess,exoplanets
 2024ApJ...960...11K,tess,astrophysics
 2024ApJ...960...20Z,tess,astrophysics
 2024ApJ...960...60B,tess,astrophysics
@@ -2762,8 +2771,13 @@
 2024ApJ...962..123S,tess,astrophysics
 2024ApJ...962L..12L,unrelated,
 2024ApJ...962L..22D,tess,exoplanets
+2024ApJ...963...78H,tess,astrophysics
+2024ApJ...963...89R,tess,astrophysics
 2024ApJS..270....8W,unrelated,
 2024ApJS..270...20X,tess,astrophysics
+2024ApJS..271...16D,tess,exoplanets
+2024ApJS..271...17Z,tess,astrophysics
+2024ApJS..271...28S,tess,astrophysics
 2024MNRAS.527....1W,tess,astrophysics
 2024MNRAS.527...35D,tess,exoplanets
 2024MNRAS.527...53M,unrelated,
@@ -2812,6 +2826,17 @@
 2024MNRAS.528.2562S,tess,astrophysics
 2024MNRAS.528.2851M,tess,exoplanets
 2024MNRAS.528.3378Z,tess,astrophysics
+2024MNRAS.528.4053W,unrelated,
+2024MNRAS.528.4092B,tess,exoplanets
+2024MNRAS.528.4528M,tess,astrophysics
+2024MNRAS.528.4760L,unrelated,
+2024MNRAS.528.5160R,tess,exoplanets
+2024MNRAS.528.5242G,tess,astrophysics
+2024MNRAS.528.5703S,tess,astrophysics
+2024MNRAS.528.6056H,tess,astrophysics
+2024MNRAS.528.6608T,tess,astrophysics
+2024MNRAS.529..374B,tess,astrophysics
+2024MNRAS.529L.164F,tess,astrophysics
 2024MNRAS.tmp..391T,tess,astrophysics
 2024MNRAS.tmp..482T,tess,astrophysics
 2024NewA..10502081Z,tess,astrophysics
@@ -2820,6 +2845,7 @@
 2024NewA..10602129L,tess,astrophysics
 2024NewA..10602136H,tess,astrophysics
 2024PASJ...76..118L,tess,astrophysics
+2024RAA....24c5012W,tess,exoplanets
 2024SuScT..37a5008H,unrelated,
 2024arXiv240100715B,unrelated,
 2024arXiv240101318C,unrelated,
@@ -2856,3 +2882,4 @@
 2024arXiv240212369O,tess,astrophysics
 2024arXiv240212461L,tess,astrophysics
 2024arXiv240213223G,tess,exoplanets
+2024arXiv240301295L,tess,exoplanets
