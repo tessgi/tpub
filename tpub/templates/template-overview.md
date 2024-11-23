@@ -1,14 +1,13 @@
 Title: Publications
+template: slide
 Save_as: publications.html
-
-[TOC]
 
 We request that scientific publications using data obtained from the TESS project include one of the following acknowledgments:
 
 *This paper includes data collected by the TESS mission. Funding for
 the TESS mission is provided by the NASA's Science Mission Directorate.*
 
-## Publication database
+<h2>Publication database</h2>
 
 The TESS Science Support Center curates a list of scientific publications
 pertaining to TESS.
@@ -33,16 +32,16 @@ Last update: {{ now.strftime('%d %b %Y') }}.
 
 <hr/>
 
-## Breakdown by year & mission
+<h2>Breakdown by year & mission</h2>
 
 The graph below shows the number of publications as a function
 of year.
 
-![Publication rate by year](images/tpub/tpub-publication-rate.png)
+![Publication rate by year](images/statistics/publications_barchart.png)
 
 <hr/>
 
-## Breakdown by subject
+<h2>Breakdown by subject</h2>
 
 Both TESS data have been used for scientific applications
 that reach far beyond exoplanet research.
@@ -53,11 +52,11 @@ pertain to other areas of astrophysics
 ({{ "%.0f"|format(metrics["astrophysics_fraction"]*100) }}%).
 
 
-![Publications by subject](images/tpub/tpub-piechart.png)
+![Publications by subject](images/statistics/publications_piechart.png)
 
 <hr/>
 
-## Most-cited publications
+</h2>Most-cited publications</h2>
 
 TESS publications have cumulatively been cited
 {{ metrics["citation_count"] }} times.
@@ -74,7 +73,7 @@ based on the citation count obtained from NASA ADS.
 <hr/>
 
 <!-- 
-## Most-read publications
+<h2>Most-read publications</h2>
 
 The read count shown below is obtained from the ADS API
 and indicates the number of times the article has been downloaded

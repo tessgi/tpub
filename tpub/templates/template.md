@@ -1,7 +1,7 @@
 Title: {{ title }}
+template: slide
 Save_as: {{ save_as }}
 
-[TOC]
 {% for month in articles %}
 
 {{ month }}
