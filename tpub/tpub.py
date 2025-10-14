@@ -149,7 +149,8 @@ class PublicationDB(object):
         print('-'*len(title))
         print(abstract)
         print('')
-        print('Authors: ' + ', '.join(article.author))
+        if article.author != None:
+            print('Authors: ' + ', '.join(article.author))
         print('Date: ' + article.pubdate)
         print('Status: ' + str(article.property))
         print('URL: http://adsabs.harvard.edu/abs/' + article.bibcode)
