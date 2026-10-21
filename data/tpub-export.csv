@@ -4723,6 +4723,9 @@
 2026A&A...714A.149S,tess,exoplanets
 2026A&A...714A.170S,tess,astrophysics
 2026A&A...714A.182Z,tess,astrophysics
+2026A&A...714A.222P,tess,astrophysics
+2026A&A...714A.277L,tess,astrophysics
+2026A&A...714A.318C,tess,astrophysics
 2026A&C....5501084N,tess,astrophysics
 2026AAS...24710703L,unrelated,
 2026AAS...24725407W,unrelated,
@@ -4848,6 +4851,7 @@
 2026AJ....172..216L,tess,exoplanets
 2026AJ....172..224L,tess,exoplanets
 2026AJ....172..236C,tess,astrophysics
+2026AJ....172..242V,unrelated,
 2026AN....34770059S,tess,exoplanets
 2026AN....34770085D,tess,astrophysics
 2026ARA&A..64..321H,tess,astrophysics
@@ -4991,6 +4995,12 @@
 2026ApJ..1009L..39C,tess,astrophysics
 2026ApJ..1009L..40D,tess,astrophysics
 2026ApJ..1010...38M,tess,astrophysics
+2026ApJ..1010...92Z,tess,astrophysics
+2026ApJ..1010...99L,tess,astrophysics
+2026ApJ..1010..100B,tess,astrophysics
+2026ApJ..1010..132D,tess,astrophysics
+2026ApJ..1010..183L,tess,astrophysics
+2026ApJ..1010..188Y,tess,astrophysics
 2026ApJS..282...10S,tess,astrophysics
 2026ApJS..282...29R,tess,astrophysics
 2026ApJS..283....4T,tess,astrophysics
@@ -5229,6 +5239,7 @@
 2026MNRAS.tmp.1667C,tess,astrophysics
 2026MNRAS.tmp.1683M,tess,astrophysics
 2026MNRAS.tmp.1754B,tess,astrophysics
+2026MNRAS.tmp.1813W,tess,astrophysics
 2026NatAs..10...64N,tess,astrophysics
 2026NatAs..10...92C,unrelated,
 2026NatAs..10..818W,tess,exoplanets
@@ -5297,6 +5308,7 @@
 2026PASP..138i4202B,tess,astrophysics
 2026PASP..138i4205P,tess,astrophysics
 2026PASP..138i4301B,tess,astrophysics
+2026PASP..138j4504D,tess,exoplanets
 2026PSJ.....7..192A,tess,astrophysics
 2026PZ.....46....1M,tess,astrophysics
 2026PhR..1150....1P,tess,astrophysics
@@ -5329,6 +5341,7 @@
 2026RNAAS..10..196B,tess,astrophysics
 2026RNAAS..10..268M,tess,astrophysics
 2026RNAAS..10..274O,tess,astrophysics
+2026RNAAS..10..284M,tess,exoplanets
 2026SSRv..222...32S,tess,astrophysics
 2026SoPh..301...38T,unrelated,
 2026SoPh..301...68D,unrelated,
@@ -5893,6 +5906,7 @@
 2026arXiv261002367K,tess,astrophysics
 2026arXiv261002434B,tess,exoplanets
 2026arXiv261002629F,unrelated,
+2026arXiv261004449C,tess,astrophysics
 2026arXiv261004497S,tess,exoplanets
 2026arXiv261006082D,tess,astrophysics
 2026arXiv261007161W,tess,astrophysics
@@ -5911,3 +5925,23 @@
 2026arXiv261012600B,tess,exoplanets
 2026arXiv261013200B,unrelated,
 2026arXiv261013686E,tess,exoplanets
+2026arXiv261014283L,tess,astrophysics
+2026arXiv261014371L,tess,astrophysics
+2026arXiv261015939G,tess,astrophysics
+2026arXiv261016772G,tess,astrophysics
+2026arXiv261017136M,tess,astrophysics
+2026arXiv261018338D,tess,astrophysics
+2026arXiv261018644N,tess,astrophysics
+2026arXiv261019105K,tess,astrophysics
+2026arXiv261020700Z,tess,astrophysics
+2026arXiv261020985C,tess,astrophysics
+2026arXiv261022625O,tess,exoplanets
+2026arXiv261022790S,tess,astrophysics
+2026arXiv261024882S,tess,exoplanets
+2026arXiv261025674V,tess,astrophysics
+2026arXiv261025944L,tess,astrophysics
+2026arXiv261026056V,tess,exoplanets
+2026arXiv261028352A,tess,astrophysics
+2026arXiv261028518L,tess,exoplanets
+2026arXiv261028533Y,tess,exoplanets
+2026arXiv261028575T,tess,exoplanets
